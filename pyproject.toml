@@ -1,6 +1,40 @@
+[tool.briefcase]
+project_name = "Stream Saver"
+bundle = "dev.joswick"
+version = "0.0.1"
+url = "https://joswick.dev/stream_saver"
+license = "MIT license"
+author = 'Zachary Joswick'
+author_email = "zjoswick@gmail.com"
+
+[tool.briefcase.app.stream_saver]
+formal_name = "Stream Saver"
+description = "A tool to automatically download streams live and avoid muted VODs"
+icon = "src/stream_saver/resources/stream_saver"
+sources = ['src/stream_saver']
+requires = []
+
+
+[tool.briefcase.app.stream_saver.macOS]
+requires = []
+
+[tool.briefcase.app.stream_saver.linux]
+requires = []
+system_requires = []
+
+[tool.briefcase.app.stream_saver.windows]
+requires = []
+
+# Mobile deployments
+[tool.briefcase.app.stream_saver.iOS]
+requires = []
+
+[tool.briefcase.app.stream_saver.android]
+requires = []
+
 [tool.poetry]
 name = "stream_saver"
-version = "0.1.0"
+version = "0.0.1"
 description = "A tool to automatically download streams live and avoid muted VODs"
 authors = ["Zachary Joswick <joswick@torc.ai>"]
 license = "MIT"
@@ -11,13 +45,14 @@ typer = "^0.3.1"
 fastapi = "^0.61.0"
 pytz = "^2020.1"
 
-
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"
 pytest = "^6.0.1"
-briefcase = "^0.1.1"
+briefcase = "^0.3.3 "
 coverage = "^5.2.1"
 
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+
