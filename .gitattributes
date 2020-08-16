@@ -1,0 +1,2 @@
+src/binaries/ffmpeg-4.3.1-win64/ffmpeg.exe filter=lfs diff=lfs merge=lfs -text
+src/binaries/ffmpeg-4.3.1-linux/ffmpeg filter=lfs diff=lfs merge=lfs -text
