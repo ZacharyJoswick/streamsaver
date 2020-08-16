@@ -1,4 +1,4 @@
-from stream_saver.app import main
+from stream_saver.app import run
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    run()
